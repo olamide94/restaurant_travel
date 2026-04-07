@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Adventures | Travel Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .travel-hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">WANDERLUST</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#travelNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="travelNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="travel-hero">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Explore the Unexplored</h1>
+            <p class="fs-4 mb-4">Discover breathtaking destinations and create memories that last a lifetime.</p>
+            <button class="btn btn-primary btn-lg rounded-pill px-5">Start Your Journey</button>
+        </div>
+    </header>
+
+    <section id="destinations" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Top Destinations</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Paris">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Paris, France</h5>
+                            <p class="card-text text-muted">The city of lights, culture, and world-class cuisine awaits you.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Bali">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Bali, Indonesia</h5>
+                            <p class="card-text text-muted">Tropical paradise with serene temples and crystal clear waters.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Yosemite">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Yosemite, USA</h5>
+                            <p class="card-text text-muted">Majestic granite cliffs and redwood forests for the ultimate adventure.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tours" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Available Tour Packages</h2>
+            <div class="accordion shadow" id="tourAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tour1">
+                            European Escape (10 Days)
+                        </button>
+                    </h2>
+                    <div id="tour1" class="accordion-collapse collapse show" data-bs-parent="#tourAccordion">
+                        <div class="accordion-body">
+                            Visit 5 countries including France, Italy, and Switzerland. Includes 5-star hotels and guided tours.
+                            <br><a href="#" class="btn btn-link px-0">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tour2">
+                            Island Hopping Adventure (7 Days)
+                        </button>
+                    </h2>
+                    <div id="tour2" class="accordion-collapse collapse" data-bs-parent="#tourAccordion">
+                        <div class="accordion-body">
+                            Private boat tours across the Greek Islands. Perfect for honeymooners and groups.
+                            <br><a href="#" class="btn btn-link px-0">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tour3">
+                            African Safari Expedition (5 Days)
+                        </button>
+                    </h2>
+                    <div id="tour3" class="accordion-collapse collapse" data-bs-parent="#tourAccordion">
+                        <div class="accordion-body">
+                            Unforgettable wildlife photography tours in the Serengeti. Luxury camping included.
+                            <br><a href="#" class="btn btn-link px-0">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container shadow p-5 bg-white rounded" style="max-width: 700px;">
+            <h2 class="text-center mb-4">Inquire About a Trip</h2>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" placeholder="Jane Doe">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="jane@example.com">
+                </div>
+                <div class="col-12">
+                    <label class="form-label">Destination of Interest</label>
+                    <select class="form-select">
+                        <option selected>Choose...</option>
+                        <option>Europe</option>
+                        <option>Asia</option>
+                        <option>Americas</option>
+                        <option>Africa</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary w-100">Send My Request</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-4 bg-primary text-white text-center">
+        <div class="container">
+            <p class="mb-1">© 2026 Wanderlust Adventures Travel Agency</p>
+            <div class="fs-4">
+                <i class="bi bi-facebook mx-2"></i>
+                <i class="bi bi-instagram mx-2"></i>
+                <i class="bi bi-twitter mx-2"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
